@@ -1,0 +1,102 @@
+header {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    color:white;
+    font-weight:bold;
+    background-image: url(pasfoto.png);
+    background-size:cover;
+    background-position:bottom;
+  }
+  
+
+body { 
+    margin: 0; padding: 0;
+    font-family: 'open sans' , sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+@media (max-width:500px){
+    Body{
+        background-color: blue;
+    }
+
+}
+
+@media (max-width:360){
+nav {flex-direction: column;
+    }
+}
+
+
+nav a {
+    border:2px solid rgb(255, 255, 255);
+    padding: 8px;
+    flex:1;
+    text-align:center;
+    background-color: rgb(50, 166, 205);
+    text-decoration: none;
+    color: white;
+    font: size 1.1em;
+    transition: all 0,4s ease-out;
+}
+
+nav a:hover { 
+    background-color: darkblue;
+}
+
+section#jeams{
+    height: 40vh;
+    background-image: url(../images/754.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+
+}
+
+section#collage {
+    display:flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+section#collage div {
+    flex: 1;
+}
+
+section#collage div img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+@media (min-width: 480px) and (max-width:767px) {
+    body {
+      background-color:white;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width:1023px) {
+    body {
+      background-color:green;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width:1199px){
+    body {
+      background-color:blue;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      background-color:yellow;
+    }
+  }
